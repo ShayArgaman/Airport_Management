@@ -102,3 +102,9 @@ int		loadPlaneFromFile(Plane* pPlane, FILE* fp)
 	return 1;
 
 }
+
+void freePlane(void* pPlane)
+{
+	Plane* temp = (Plane*)pPlane;
+	free(temp);
+}
